@@ -1,0 +1,6 @@
+blocks:
+    tips:
+        views:
+            tips:
+                template: OmniProjectEzStudioTipsBlockBundle::tips_block.html.twig
+                name: Tips Block view

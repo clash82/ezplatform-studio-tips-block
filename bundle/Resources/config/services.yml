@@ -1,0 +1,23 @@
+parameters:
+    omniproject.ezstudio_tips_block.class: OmniProject\EzStudioTipsBlockBundle\Block\TipsBlock
+    omniproject.ezstudio_tips_block.installer.class: OmniProject\EzStudioTipsBlockBundle\Installer\ContentTypeInstaller
+
+services:
+    omniproject.ezstudio_tips_block:
+        class: '%omniproject.ezstudio_tips_block.class%'
+        arguments:
+            - '@ezpublish.api.service.location'
+            - '@ezpublish.api.service.content'
+            - '@ezpublish.api.service.search'
+        tags:
+            - name: landing_page_field_type.block_type
+              alias: tips
+
+    omniproject.ezstudio_tips_block.installer:
+        class: '%omniproject.ezstudio_tips_block.installer.class%'
+        arguments:
+            - '@ezpublish.api.repository'
+            - '@ezpublish.api.service.user'
+            - '@ezpublish.api.service.content_type'
+        tags:
+            - name: console.command

@@ -1,0 +1,23 @@
+{
+  "name": "omniproject/ezstudio-tips-block",
+  "type": "library",
+  "description": "Additional Tips block for eZ Studio.",
+  "keywords": ["ezstudio", "ezplatform", "ezsystems", "tips", "blocks", "omniproject"],
+  "license": "MIT",
+  "homepage": "http://github.com/omniproject/ezstudio-tips-block",
+  "authors": [
+    {
+      "name": "Rafał Toborek",
+      "homepage": "http://omniproject.pl"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "ezsystems/landing-page-fieldtype-bundle": "^1.5"
+  },
+  "autoload": {
+    "psr-0": {
+      "OmniProject\\EzStudioTipsBlockBundle\\": "bundle"
+    }
+  }
+}

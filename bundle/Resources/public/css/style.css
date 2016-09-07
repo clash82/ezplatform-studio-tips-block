@@ -1,0 +1,25 @@
+.block-tips {
+    background: #fdfbc5;
+    box-shadow: 5px 5px 10px #ccc;
+    padding: 20px;
+}
+
+.block-tips-icon img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.block-tips-title {
+    padding-left: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.block-tips-title h3 {
+    font-size: 19px;
+}
+
+.block-tips-body {
+    margin-top: 10px;
+}

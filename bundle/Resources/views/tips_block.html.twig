@@ -1,0 +1,16 @@
+<div class="row block-tips">
+    <div class="row">
+        <div class="col-md-2 text-center block-tips-icon">
+            <img src="{{ asset('bundles/omniprojectezstudiotipsblock/images/tips_block.svg') }}" alt="{{ 'Tip of the day'|trans }}" width="50" height="50" />
+        </div>
+        <div class="col-md-10 text-left block-tips-title">
+            <h3>{{ ez_content_name(content) }}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 block-tips-body">
+            {{ ez_render_field(content, 'body') }}
+        </div>
+    </div>
+</div>
