@@ -1,5 +1,7 @@
 # eZ Studio Tips block
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/aea422a4-794b-4bf5-8aa5-0b96c05abe57/big.png)](https://insight.sensiolabs.com/projects/aea422a4-794b-4bf5-8aa5-0b96c05abe57)
+
 This bundle adds an additional Tips block (aka Tip of the Day block) into eZ Systems [eZ Studio](//ezstudio.com). This bundle can be used for a demonstration purpose on how to build new blocks for eZ Studio.
 
 ![screenshot](https://cloud.githubusercontent.com/assets/3033038/18852413/9220ed76-8440-11e6-8afe-9fed26f9909e.png)
