@@ -10,7 +10,6 @@ use EzSystems\LandingPageFieldTypeBundle\FieldType\LandingPage\Definition\BlockA
 use EzSystems\LandingPageFieldTypeBundle\FieldType\LandingPage\Model\AbstractBlockType;
 use EzSystems\LandingPageFieldTypeBundle\FieldType\LandingPage\Model\BlockValue;
 use eZ\Publish\API\Repository\ContentService;
-use eZ\Publish\API\Repository\LocationService;
 use eZ\Publish\API\Repository\SearchService;
 use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
 use eZ\Publish\API\Repository\Values\Content\LocationQuery;
@@ -26,9 +25,6 @@ class TipsBlock extends AbstractBlockType
      */
     const PATTERN_CONTENT_ID = '/[0-9]+/';
 
-    /** @var \eZ\Publish\API\Repository\LocationService */
-    private $locationService;
-
     /** @var \eZ\Publish\API\Repository\ContentService */
     private $contentService;
 
@@ -36,16 +32,13 @@ class TipsBlock extends AbstractBlockType
     private $searchService;
 
     /**
-     * @param \eZ\Publish\API\Repository\LocationService $locationService
      * @param \eZ\Publish\API\Repository\ContentService $contentService
      * @param \eZ\Publish\API\Repository\SearchService $searchService
      */
     public function __construct(
-        LocationService $locationService,
         ContentService $contentService,
         SearchService $searchService
     ) {
-        $this->locationService = $locationService;
         $this->contentService = $contentService;
         $this->searchService = $searchService;
     }

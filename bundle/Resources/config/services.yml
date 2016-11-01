@@ -6,7 +6,6 @@ services:
     omniproject.ezstudio_tips_block:
         class: '%omniproject.ezstudio_tips_block.class%'
         arguments:
-            - '@ezpublish.api.service.location'
             - '@ezpublish.api.service.content'
             - '@ezpublish.api.service.search'
         tags:
