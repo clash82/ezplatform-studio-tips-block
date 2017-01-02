@@ -1,8 +1,8 @@
-# eZ Studio Tips block
+# eZ Platform Studio Tips block
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/aea422a4-794b-4bf5-8aa5-0b96c05abe57/big.png)](https://insight.sensiolabs.com/projects/aea422a4-794b-4bf5-8aa5-0b96c05abe57)
 
-This bundle adds an additional Tips block (aka Tip of the Day block) into eZ Systems [eZ Studio](//ezstudio.com). This bundle can be used for a demonstration purpose on how to build new blocks for eZ Studio.
+This bundle adds an additional Tips block (aka Tip of the Day block) into eZ Systems [eZ Platform Enterprise Edition Studio](//ez.no). This bundle can be used for a demonstration purpose on how to build new blocks for eZ Studio.
 
 ![screenshot](https://cloud.githubusercontent.com/assets/3033038/18852413/9220ed76-8440-11e6-8afe-9fed26f9909e.png)
 
@@ -17,15 +17,15 @@ This package is available via Composer, so the instructions below are similar to
 
 Run the following command in a terminal, from your Symfony installation root (pick the most recent release):
 ```bash
-composer require omniproject/ezstudio-tips-block
+composer require clash82/ezplatform-studio-tips-block
 ```
 
 Enable the bundle in `app/AppKernel.php` file:
 
 ```php
 $bundles = array(
-    // IMPORTANT: OmniProjectEzStudioTipsBlockBundle must be placed above LandingPageFieldTypeBundle to work properly
-    new OmniProject\EzStudioTipsBlockBundle\OmniProjectEzStudioTipsBlockBundle(),
+    // IMPORTANT: Clash82EzPlatformStudioTipsBlockBundle must be placed above LandingPageFieldTypeBundle to work properly
+    new Clash82\EzPlatformStudioTipsBlockBundle\Clash82EzPlatformStudioTipsBlockBundle(),
   
     // existing bundles   
     new EzSystems\LandingPageFieldTypeBundle\EzSystemsLandingPageFieldTypeBundle(),
@@ -37,7 +37,7 @@ Install additional assets (CSS) for default template (omit this step if you are 
  
 ```twig
 {% stylesheets
-    'bundles/omniprojectezstudiotipsblock/css/style.css'
+    'bundles/clash82ezplatformstudiotipsblock/css/style.css'
 %}
     <link rel="stylesheet" type="text/css" href="{{ asset_url }}">
 {% endstylesheets %}

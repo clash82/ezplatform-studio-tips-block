@@ -2,7 +2,7 @@
 /**
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace OmniProject\EzStudioTipsBlockBundle\DependencyInjection;
+namespace Clash82\EzPlatformStudioTipsBlockBundle\DependencyInjection;
 
 use Symfony\Component\Config\Resource\FileResource;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -17,7 +17,7 @@ use Symfony\Component\Yaml\Yaml;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class EzStudioTipsBlockExtension extends Extension implements PrependExtensionInterface
+class EzPlatformStudioTipsBlockExtension extends Extension implements PrependExtensionInterface
 {
     public function load(array $configs, ContainerBuilder $container)
     {

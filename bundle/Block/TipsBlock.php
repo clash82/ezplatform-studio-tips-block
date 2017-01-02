@@ -2,7 +2,7 @@
 /**
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace OmniProject\EzStudioTipsBlockBundle\Block;
+namespace Clash82\EzPlatformStudioTipsBlockBundle\Block;
 
 use EzSystems\LandingPageFieldTypeBundle\Exception\InvalidBlockAttributeException;
 use EzSystems\LandingPageFieldTypeBundle\FieldType\LandingPage\Definition\BlockDefinition;
@@ -106,7 +106,7 @@ class TipsBlock extends AbstractBlockType
             'tips',
             'Tips',
             'default',
-            'bundles/omniprojectezstudiotipsblock/images/tips_block.svg',
+            'bundles/clash82ezplatformstudiotipsblock/images/tips_block.svg',
             [],
             [
                 new BlockAttributeDefinition(

@@ -2,7 +2,7 @@
 /**
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace OmniProject\EzStudioTipsBlockBundle\Installer;
+namespace Clash82\EzPlatformStudioTipsBlockBundle\Installer;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
